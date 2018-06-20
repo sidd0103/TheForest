@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Forest</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="src/client/sprites/gui/Archer_0.png" rel="icon">
+</head>
+<body>
+    <canvas id="layer0"></canvas>
+    <canvas id="layer1"></canvas>
+    <canvas id="layer2"></canvas>
+    <canvas id="gui"></canvas>
+    <div id="titlePanel" class="titlePanel">
+        <div data-depth=".2" class="background"></div>
+        <div dat-depth="0" class="darker-layer"></div>
+        <div data-depth=".3"  class="welcome">
+            <div class="gameTitle">The Forest</div>
+            <div class="enterForm">
+                <div id="loader" class="loader">
+                    <div class="title">LOADING...</div>
+                    <div id="status" class="status">CONNECTING TO SERVER</div>
+                </div>
+                <div id="form" class="form">
+                    <div id="class" class="class">
+                        <img src="src/client/sprites/gui/Knight_1.png" class="classPreview">
+                    </div>
+                    <div class="uid">
+                        <input id="uid" placeholder="ENTER USERNAME"/>
+                    </div>
+                    <div id="play" class="playBtn">></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/client.js"></script>
+</body>
+</html>
